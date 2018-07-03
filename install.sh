@@ -179,7 +179,7 @@ phpmyadmin:
   environment:
     MYSQL_USERNAME: root
     MYSQL_ROOT_PASSWORD: ${PASSWORD}" > docker-compose.yaml
-
+    PMA_HOST: mysql
 
 # Run the containers
 docker-compose up --build
