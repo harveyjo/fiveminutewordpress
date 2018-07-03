@@ -46,7 +46,7 @@ rm latest.zip
 
 
 # Add a wp-config.php to the project
-echo "\<?php
+echo "<?php
 /**
  * The base configuration for WordPress
  *
@@ -156,7 +156,7 @@ php composer.phar init
 
 
 # Create a custom docker-compose.yaml
-echo "wordpress:
+echo "wordpress_core:
   image: wordpress
   links:
     - ${DATABASE}:mysql
